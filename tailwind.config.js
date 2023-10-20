@@ -8,13 +8,18 @@ export default {
     extend: {
       colors: {
         'midnight': '#040615',
+        'gradientBlue': '#7FB6D5'
       },
       width: {
         '960': '960px'
       },
       maxWidth: {
         '960': '960px'
+      },
+      borderRadius: {
+        'circle': '50%'
       }
+
     },
   },
   plugins: [],
