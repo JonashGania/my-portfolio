@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'midnight': '#040615',
+      },
+      width: {
+        '960': '960px'
+      },
+      maxWidth: {
+        '960': '960px'
+      }
+    },
   },
   plugins: [],
 }
