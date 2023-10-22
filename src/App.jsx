@@ -4,6 +4,7 @@ import About from "./components/About"
 import Projects from "./components/Projects"
 import Experience from "./components/Experience"
 import { Routes, Route } from "react-router-dom"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
       </Routes>
+
+      <Footer />
     </div>
   )
 }
