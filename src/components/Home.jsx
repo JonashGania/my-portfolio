@@ -1,4 +1,5 @@
 import data from "../constants/data.js"
+import Footer from "./Footer.jsx"
 import { Link } from "react-router-dom"
 
 export default function Home(){
@@ -26,7 +27,7 @@ export default function Home(){
                                 <img 
                                     src="src/assets/taskflow.png" 
                                     alt="taskflow image" 
-                                    className=" w-full h-full object-cover rounded-lg border border-slate-500"
+                                    className=" w-full h-full object-cover rounded-lg border border-slate-500 hover:scale-105 duration-300"
                                 />
                             </div>
                             <div className="col-span-5 flex flex-col pl-10">
@@ -61,7 +62,7 @@ export default function Home(){
                                 <img 
                                     src="src/assets/weather-app.png" 
                                     alt="weather-app image" 
-                                    className=" w-full h-full object-cover rounded-lg border border-slate-500"
+                                    className=" w-full h-full object-cover rounded-lg border border-slate-500 hover:scale-105 duration-300"
                                 />
                             </div>
                             <div className="col-span-5 flex flex-col pl-10">
@@ -92,7 +93,7 @@ export default function Home(){
                             </div>     
                         </div>
                     </div>
-                    <div className="pt-16">
+                    <div className=" pt-24">
                         <Link to="/projects" className="bg-white flex items-center justify-center gap-2 rounded-md w-32 mx-auto py-3 ">
                             <p className="text-black text-lg font-medium">View All</p>
                             <svg 
