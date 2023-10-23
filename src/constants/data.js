@@ -8,6 +8,8 @@ const data = {
             tools: ['HTML', 'CSS', 'JavaScript'],
             link: '',
             imgUrl: 'src/assets/taskflow.png'
+        },{
+            title: 'Weather-app',
         }
     ],
     socialLinks: {
