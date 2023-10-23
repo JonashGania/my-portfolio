@@ -18,6 +18,9 @@ export default {
       },
       borderRadius: {
         'circle': '50%'
+      },
+      gridTemplateColumns: {
+        'auto-fill': 'repeat(auto-fill, minmax(110px, 1fr))'
       }
 
     },
