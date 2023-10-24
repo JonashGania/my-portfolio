@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export default function Home(){
     return (
-        <section className="w-full min-h-screen bg-midnight">
+        <section className="w-full min-h-screen bg-midnight pt-24">
             <div className="max-w-960 mx-auto">
                 <div className="w-full flex justify-center pt-20">
                     <img 
@@ -24,7 +24,7 @@ export default function Home(){
                         <div className="grid grid-cols-8 gap-4">
                             <div className="col-span-3 h-[200px] overflow-hidden rounded-lg border border-slate-500">
                                 <img 
-                                    src="src/assets/taskflow.png" 
+                                    src="/taskflow.png" 
                                     alt="taskflow image" 
                                     className=" w-full h-full object-cover rounded-lg hover:scale-110 duration-300"
                                 />
@@ -60,7 +60,7 @@ export default function Home(){
                         <div className="grid grid-cols-8 gap-4">
                             <div className="col-span-3 h-[200px] overflow-hidden rounded-lg border border-slate-500">
                                 <img 
-                                    src="src/assets/weather-app.png" 
+                                    src="/weather-app.png" 
                                     alt="weather-app image" 
                                     className=" w-full h-full object-cover rounded-lg hover:scale-110 duration-300"
                                 />
