@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom"
 
 export default function Navbar(){
     return(
-        <header className="w-full bg-midnight flex justify-center">
+        <header className="w-full bg-midnight flex justify-center fixed z-10">
             <nav className="w-960 mx-4 flex items-center justify-between gap-4 h-24">
                 <Link to="/" className="text-white text-xl px-2 py-1 border-2 border-white rounded-md">Nash.</Link>
                 <ul className="flex items-center gap-14">
