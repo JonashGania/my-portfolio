@@ -1,7 +1,8 @@
+import data from "../constants/data.js"
 
 export default function About(){
     return (
-        <section className="w-full min-h-screen bg-midnight">
+        <section className="w-full min-h-screen bg-midnight pt-24">
             <div className="max-w-[700px] mx-auto px-4">
                 <h1 className="text-white pt-32 pb-10 font-bold text-[40px]">About Me</h1>
                 <p className="text-gray-500 text-lg pb-8">
@@ -212,11 +213,41 @@ export default function About(){
                         </div>
                     </div>
                 </div>
-                <div className="pt-36">
-                    <h1 className="text-3xl text-white font-semibold">Certificates</h1>
+                <div className="pt-36 pb-20">
+                    <h1 className="text-3xl text-white font-semibold pb-10">Certificates</h1>
+                    <div className="flex items-center justify-center sm:justify-between flex-wrap gap-x-4 gap-y-6">
+                        {data.certificates.map((cert) => (
+                            <CertificationCard 
+                                key={cert.id}
+                                name={cert.name}
+                                company={cert.company}
+                                link={cert.link}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
+    )
+}
+
+const CertificationCard = ( {name, company, link }) => {
+    return (
+        <div className="bg-[rgba(60,60,60,0.6)] flex flex-col w-[320px] py-2 px-3 rounded-md">
+            <span className="text-white text-lg font-semibold text-ellipsis whitespace-nowrap overflow-hidden">{name}</span>
+            <span className="text-gray-300 text-">{company}</span>
+            <div className="pt-4">
+                <a 
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group flex items-center"
+                >
+                    <span className="text-white text-sm pr-2">View Certificate</span>
+                    <div className="text-white group-hover:translate-x-2 transition duration-300">&rarr;</div>
+                </a>
+            </div>
+        </div>
     )
 }
  
