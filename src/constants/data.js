@@ -40,6 +40,14 @@ const data = {
             id: 2
         }
     ],
+    experience: [
+        {
+            date: '2020 - 2024',
+            role: 'Computer Engineering',
+            company: 'Holy Angel University',
+            description: 'Studied Bachelor of Science in Computer Engineering at Holy Angel University.'
+        },
+    ],
     socialLinks: {
         github: 'https://github.com/JonashGania',
         linkedIn: '',
