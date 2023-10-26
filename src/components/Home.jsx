@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export default function Home(){
     return (
-        <section className="w-full min-h-screen bg-midnight pt-24">
+        <section className="w-full min-h-screen bg-midnight pt-16">
             <div className="max-w-960 mx-auto">
                 <div className="w-full flex justify-center pt-20">
                     <img 
@@ -13,7 +13,7 @@ export default function Home(){
                     />
                 </div>
                 <div className="mx-4">
-                    <p className="font-extrabold text-4xl text-center mx-auto pt-10 max-w-3xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-gradientBlue">
+                    <p className="font-extrabold text-2xl sm:text-4xl text-center mx-auto pt-10 max-w-3xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-gradientBlue transition-all duration-300 ease-in">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore
                     </p>
@@ -21,16 +21,18 @@ export default function Home(){
                 <div className="pt-40 pb-20 mx-4">
                     <h1 className="text-4xl text-white font-bold">Recent <br />Projects </h1>
                     <div className="flex flex-col pt-20 gap-20">
-                        <div className="grid grid-cols-8 gap-4">
-                            <div className="col-span-3 h-[200px] overflow-hidden rounded-lg border border-slate-500">
-                                <img 
-                                    src="/taskflow.png" 
-                                    alt="taskflow image" 
-                                    className=" w-full h-full object-cover rounded-lg hover:scale-110 duration-300"
-                                />
+                        <div className="grid grid-cols-1 md:grid-cols-8 gap-8 md:gap-4">
+                            <div className="order-1 flex justify-center justify-items-center md:order-first col-span-1 md:col-span-3">
+                                <div className="w-[340px] md:w-full h-[200px] overflow-hidden rounded-lg border border-slate-500">
+                                    <img 
+                                        src="/taskflow.png" 
+                                        alt="taskflow image" 
+                                        className="w-full h-full object-cover rounded-lg hover:scale-110 duration-300"
+                                    />
+                                </div>
                             </div>
-                            <div className="col-span-5 flex flex-col pl-10">
-                                <span className="text-3xl text-white font-bold pb-2">TaskFlow</span>
+                            <div className="col-span-1 md:col-span-5 flex flex-col pl-5 md:pl-10">
+                                <span className="text-2xl md:text-3xl text-white font-bold pb-2">TaskFlow</span>
                                 <div className="pb-2 flex items-center">
                                     <a href="" className="text-gray-500 font-medium flex items-center gap-2 hover:underline decoration-solid">
                                         Link
@@ -57,16 +59,18 @@ export default function Home(){
                                 </div>
                             </div>   
                         </div>
-                        <div className="grid grid-cols-8 gap-4">
-                            <div className="col-span-3 h-[200px] overflow-hidden rounded-lg border border-slate-500">
-                                <img 
-                                    src="/weather-app.png" 
-                                    alt="weather-app image" 
-                                    className=" w-full h-full object-cover rounded-lg hover:scale-110 duration-300"
-                                />
+                        <div className="grid grid-cols-1 md:grid-cols-8 gap-8 md:gap-4">
+                            <div className="order-1 flex justify-center justify-items-center md:order-first col-span-1 md:col-span-3">
+                                <div className="w-[340px] md:w-full  h-[200px] overflow-hidden rounded-lg border border-slate-500">
+                                    <img 
+                                        src="/weather-app.png" 
+                                        alt="weather-app image" 
+                                        className=" w-full h-full object-cover rounded-lg hover:scale-110 duration-300"
+                                    />
+                                </div>
                             </div>
-                            <div className="col-span-5 flex flex-col pl-10">
-                                <span className="text-3xl text-white font-bold pb-2">Weather-App</span>
+                            <div className="col-span-1 md:col-span-5 flex flex-col pl-5 md:pl-10">
+                                <span className="text-2xl md:text-3xl text-white font-bold pb-2">Weather-App</span>
                                 <div className="pb-2 flex items-center">
                                     <a href="" className="text-gray-500 font-medium flex items-center gap-2 hover:underline decoration-solid">
                                         Link
