@@ -2,7 +2,7 @@ import data from "../constants/data.js"
 
 export default function About(){
     return (
-        <section className="w-full min-h-screen bg-midnight pt-24">
+        <section className="w-full min-h-screen bg-midnight pt-8 sm:pt-12 transition-all duration-300 ease-in">
             <div className="max-w-[700px] mx-auto px-4">
                 <h1 className="text-white pt-32 pb-10 font-bold text-[40px]">About Me</h1>
                 <p className="text-gray-500 text-lg pb-8">
