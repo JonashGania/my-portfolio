@@ -43,6 +43,7 @@ const data = {
     experience: [
         {
             date: '2020 - 2024',
+            job: '(Graduating)',
             role: 'Computer Engineering',
             company: 'Holy Angel University',
             description: 'Studied Bachelor of Science in Computer Engineering at Holy Angel University.'
