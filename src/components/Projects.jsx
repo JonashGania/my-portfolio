@@ -2,22 +2,24 @@ import data from "../constants/data.js"
 
 export default function Projects(){
     return (
-        <section className="w-full min-h-screen bg-midnight pt-24">
-            <div className="max-w-960 mx-auto">
+        <section className="w-full min-h-screen bg-midnight pt-8 sm:pt-12 transition-all duration-300 ease-in">
+            <div className="max-w-960 mx-auto px-4">
                 <h1 className="text-white pt-32 font-bold text-[40px]">Projects</h1>
                 <div className="flex flex-col pt-20 gap-20 pb-20">
                     {data.projects.map((proj, index) => (
                         <li key={index}>
-                            <div className="grid grid-cols-8 gap-4">
-                                <div className="col-span-3 h-[200px] overflow-hidden rounded-lg border border-slate-500">
-                                    <img 
-                                        src={proj.imgUrl} 
-                                        alt="Project image"
-                                        className=" w-full h-full object-cover rounded-lg hover:scale-110 duration-300" 
-                                    />
+                            <div className="grid grid-cols-1 md:grid-cols-8 gap-8 md:gap-4">
+                                <div className="order-1 flex justify-center justify-items-center md:order-first col-span-1 md:col-span-3">
+                                    <div className="w-[340px] md:w-full h-[200px] overflow-hidden rounded-lg border border-slate-500">
+                                        <img 
+                                            src={proj.imgUrl} 
+                                            alt="Project image"
+                                            className=" w-full h-full object-cover rounded-lg hover:scale-110 duration-300" 
+                                        />
+                                    </div>
                                 </div>
-                                <div className="col-span-5 flex flex-col pl-10">
-                                    <span className="text-3xl text-white font-bold pb-2">{proj.title}</span>
+                                <div className="col-span-1 md:col-span-5 flex flex-col pl-5 md:pl-10">
+                                    <span className="text-2xl md:text-3xl text-white font-bold pb-2">{proj.title}</span>
                                     <div className="pb-2 flex items-center">
                                         <a href={proj.link} className="text-gray-500 font-medium flex items-center gap-2 hover:underline decoration-solid">
                                             Link
