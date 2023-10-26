@@ -1,25 +1,78 @@
 import { Link, NavLink } from "react-router-dom"
-import { FaBars } from "react-icons/fa6"
+import { FaBars, FaXmark } from "react-icons/fa6"
+import { useState } from "react"
 
 export default function Navbar(){
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    const openMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
+
+    const closeMenu = () => {
+        setIsMenuOpen(false)
+    }
+
     return(
         <header className="w-full bg-midnight border-b-[1px] border-slate-600 flex justify-center sticky top-0 z-20">
             <nav className="w-960 mx-4 flex items-center justify-between gap-4 min-h-[80px]">
-                <Link to="/" className="text-white text-xl px-2 py-1 border-2 border-white rounded-md">Nash.</Link>
-                <ul className=" hidden md:flex md:items-center gap-10 md:gap-14 transition-all duration-200 ease-in ">
-                    <li className="text-gray-400 text-lg">
-                        <NavLink to="/about" className="py-2 px-3 rounded-md">About</NavLink>
+                <Link 
+                    to="/" 
+                    className="text-white text-xl px-2 py-1 border-2 border-white rounded-md"
+                    onClick={closeMenu}
+                >
+                Nash.
+                </Link>
+                <ul 
+                    className={`md:flex md:items-center gap-10 md:gap-14 text-center opacity-0 md:opacity-100 transition-all duration-300 ease-in absolute md:static bg-midnight md:bg-none w-full md:w-auto left-0 py-8 md:py-0 ${
+                        isMenuOpen ? "top-[81px] opacity-100" : "top-[-490px]" 
+                    }`}
+                >
+                    <li className="text-gray-400 text-lg py-4 ">
+                        <NavLink 
+                            to="/about" 
+                            className="py-2 px-3 rounded-md w-full md:w-auto uppercase md:lowercase"
+                            onClick={closeMenu}
+                        >
+                        About
+                        </NavLink>
                     </li>
-                    <li className="text-gray-400 text-lg">
-                        <NavLink to="/projects" className='py-2 px-3 rounded-md'>Projects</NavLink>
+                    <li className="text-gray-400 text-lg py-4">
+                        <NavLink 
+                            to="/projects" 
+                            className='py-2 px-3 rounded-md uppercase md:lowercase'
+                            onClick={closeMenu}
+                        >
+                        Projects
+                        </NavLink>
                     </li>
-                    <li className="text-gray-400 text-lg">
-                        <NavLink to="/experience" className='py-2 px-3 rounded-md'>Experience</NavLink>
+                    <li className="text-gray-400 text-lg py-4">
+                        <NavLink 
+                            to="/experience" 
+                            className='py-2 px-3 rounded-md uppercase md:lowercase'
+                            onClick={closeMenu}
+                        >
+                        Experience
+                        </NavLink>
                     </li>
+                    <button className="md:block bg-white outline-none px-3 py-2 font-medium rounded-md mt-4 md:mt-0">Get in touch</button>
                 </ul>
-                <button className="hidden md:block bg-white outline-none px-3 py-2 font-medium rounded-md">Get in touch</button>
-                <div className= "block md:hidden">
-                    <FaBars color="white" size="1.75rem" className="cursor-pointer"/>
+                <div className= "absolute right-8 block md:hidden">
+                    {isMenuOpen ? (
+                        <FaXmark 
+                            color="white"
+                            size="1.75rem"
+                            className="cursor-pointer"
+                            onClick={openMenu}
+                        />
+                    ) : (
+                        <FaBars 
+                            color="white" 
+                            size="1.75rem" 
+                            className="cursor-pointer"
+                            onClick={openMenu}
+                        />
+                    )}
                 </div>
             </nav>
         </header>
