@@ -53,7 +53,8 @@ const data = {
         github: 'https://github.com/JonashGania',
         linkedIn: '',
         instagram: '',
-        facebook: 'https://www.facebook.com/nashhh.30/'
+        facebook: 'https://www.facebook.com/nashhh.30/',
+        email: 'jonashtiglao@gmail.com'
     }
 }
 
