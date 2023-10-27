@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom"
 import { FaBars, FaXmark } from "react-icons/fa6"
 import { useState } from "react"
+import data from "../constants/data.js"
 
 export default function Navbar(){
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -24,7 +25,7 @@ export default function Navbar(){
                 Nash.
                 </Link>
                 <ul 
-                    className={`md:flex md:items-center gap-10 md:gap-14 text-center opacity-0 md:opacity-100 transition-all duration-300 ease-in absolute md:static bg-midnight md:bg-none w-full md:w-auto left-0 py-8 md:py-0 ${
+                    className={`md:flex md:items-center gap-10 text-center opacity-0 md:opacity-100 transition-all duration-300 ease-in absolute md:static bg-midnight md:bg-none w-full md:w-auto left-0 py-8 md:py-0 ${
                         isMenuOpen ? "top-[81px] opacity-100" : "top-[-490px]" 
                     }`}
                 >
@@ -55,7 +56,21 @@ export default function Navbar(){
                         Experience
                         </NavLink>
                     </li>
-                    <button className="md:block bg-white outline-none px-3 py-2 font-medium rounded-md mt-4 md:mt-0">Get in touch</button>
+                    <a 
+                        href={`mailto:${data.socialLinks.email}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="md:block bg-white outline-none px-3 py-2 font-medium rounded-md mt-4 md:mt-0"
+                    >
+                        Get in touch
+                    </a>
+                    {/* <button 
+                        className="md:block bg-white outline-none px-3 py-2 font-medium rounded-md mt-4 md:mt-0"
+                    >
+                        <a href="">
+                            Get in touch
+                        </a>
+                    </button> */}
                 </ul>
                 <div className= "absolute right-8 block md:hidden">
                     {isMenuOpen ? (
