@@ -32,7 +32,7 @@ export default function Navbar(){
                     <li className="text-gray-400 text-lg py-4 ">
                         <NavLink 
                             to="/about" 
-                            className="py-2 px-3 rounded-md w-full md:w-auto uppercase md:lowercase"
+                            className="py-2 px-3 rounded-md w-full md:w-auto uppercase md:normal-case"
                             onClick={closeMenu}
                         >
                         About
@@ -41,16 +41,16 @@ export default function Navbar(){
                     <li className="text-gray-400 text-lg py-4">
                         <NavLink 
                             to="/projects" 
-                            className='py-2 px-3 rounded-md uppercase md:lowercase'
+                            className='py-2 px-3 rounded-md uppercase md:normal-case'
                             onClick={closeMenu}
                         >
                         Projects
                         </NavLink>
                     </li>
-                    <li className="text-gray-400 text-lg py-4">
+                    <li className="text-gray-400 text-lg py-4 mb-4 md:mb-0">
                         <NavLink 
                             to="/experience" 
-                            className='py-2 px-3 rounded-md uppercase md:lowercase'
+                            className='py-2 px-3 rounded-md uppercase md:normal-case'
                             onClick={closeMenu}
                         >
                         Experience
@@ -60,17 +60,10 @@ export default function Navbar(){
                         href={`mailto:${data.socialLinks.email}`}
                         target="_blank"
                         rel="noreferrer"
-                        className="md:block bg-white outline-none px-3 py-2 font-medium rounded-md mt-4 md:mt-0"
+                        className="md:block bg-white outline-none px-3 py-2 font-medium rounded-md"
                     >
                         Get in touch
                     </a>
-                    {/* <button 
-                        className="md:block bg-white outline-none px-3 py-2 font-medium rounded-md mt-4 md:mt-0"
-                    >
-                        <a href="">
-                            Get in touch
-                        </a>
-                    </button> */}
                 </ul>
                 <div className= "absolute right-8 block md:hidden">
                     {isMenuOpen ? (
