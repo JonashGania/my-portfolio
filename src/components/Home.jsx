@@ -14,8 +14,8 @@ export default function Home(){
                 </div>
                 <div className="mx-4">
                     <p className="font-extrabold text-2xl sm:text-4xl text-center mx-auto pt-10 max-w-3xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-gradientBlue transition-all duration-300 ease-in">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore
+                        Explore my portfolio, where every project tells a story of passion, 
+                        creativity, and impactful solutions.
                     </p>
                 </div>
                 <div className="pt-40 pb-20 mx-4">
@@ -49,7 +49,7 @@ export default function Home(){
                                         </span>
                                     </a>
                                 </div>
-                                <p className="text-gray-500 text-lg font-regular pb-6">
+                                <p className="text-gray-400 text-lg font-regular pb-6">
                                     TaskFlow is a todo-list app which is designed to help users organize tasks, activities, and responsibilities.
                                 </p>
                                 <div className="flex items-center gap-8 pt">
@@ -87,7 +87,7 @@ export default function Home(){
                                         </span>
                                     </a>
                                 </div>
-                                <p className="text-gray-500 text-lg font-regular pb-6">
+                                <p className="text-gray-400 text-lg font-regular pb-6">
                                     Weather-app uses weather APIs to deliver you accurate weather conditions, temperature, humidity, and wind speed for a specific locations. 
                                 </p>
                                 <div className="flex items-center gap-8 pt">
