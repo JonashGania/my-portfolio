@@ -36,7 +36,7 @@ export default function Projects(){
                                             </span>
                                         </a>
                                     </div>
-                                    <p className="text-gray-500 text-lg font-regular pb-6">
+                                    <p className="text-gray-400 text-lg font-regular pb-6">
                                         {proj.description}
                                     </p>
                                     <div className="flex items-center gap-8 pt">
