@@ -6,7 +6,7 @@ export default function About(){
             <div className="max-w-[700px] mx-auto px-4">
                 <h1 className="text-white pt-32 pb-10 font-bold text-[40px]">About Me</h1>
                 <p className="text-gray-400 text-lg pb-8">
-                    Hi, I’m Jonash Gaña, an aspiring Software Developer fueled with curiosity who loves to bring ideas
+                    Hi, I&apos;m Jonash Gaña, an aspiring Software Developer fueled with curiosity who loves to bring ideas
                     to life through code.  During the Covid-19 pandemic, I got interested in building web applications 
                     and made the decision to learn web development. I started watching Youtube tutorials, followed web 
                     development roadmaps, read online free courses, and started building small projects. I would spend
@@ -14,7 +14,7 @@ export default function About(){
                 </p>
                 <p className="text-gray-400 text-lg">
                     These days, my main focus is to grow my knowledge and improve my skills in building web and mobile
-                    applications. I also love learning new things. When I’m not at my desk I am probably lifting weights
+                    applications. I also love learning new things. When I&apos;m not at my desk I am probably lifting weights
                     or playing games during free time.
                 </p>
                 <div className="pt-28 text-center">
