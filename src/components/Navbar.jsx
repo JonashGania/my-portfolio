@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom"
 import { FaBars, FaXmark } from "react-icons/fa6"
 import { useState } from "react"
 import data from "../constants/data.js"
+import Drawer from "./Drawer.jsx"
 
 export default function Navbar(){
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,48 +26,36 @@ export default function Navbar(){
                 Nash.
                 </Link>
                 <ul 
-                    className={`md:flex md:items-center gap-10 text-center opacity-0 md:opacity-100 transition-all duration-300 ease-in absolute md:static bg-midnight md:bg-none w-full md:w-auto left-0 py-8 md:py-0 ${
-                        isMenuOpen ? "top-[81px] opacity-100" : "top-[-490px]" 
-                    }`}
+                    className='md:flex items-center hidden gap-8'
                 >
-                    <li className="text-gray-400 text-lg py-4 ">
-                        <NavLink 
-                            to="/about" 
-                            className="py-2 px-3 rounded-md w-full md:w-auto uppercase md:normal-case"
-                            onClick={closeMenu}
-                        >
-                        About
-                        </NavLink>
-                    </li>
-                    <li className="text-gray-400 text-lg py-4">
-                        <NavLink 
-                            to="/projects" 
-                            className='py-2 px-3 rounded-md uppercase md:normal-case'
-                            onClick={closeMenu}
-                        >
-                        Projects
-                        </NavLink>
-                    </li>
-                    <li className="text-gray-400 text-lg py-4 mb-4 md:mb-0">
-                        <NavLink 
-                            to="/experience" 
-                            className='py-2 px-3 rounded-md uppercase md:normal-case'
-                            onClick={closeMenu}
-                        >
-                        Experience
-                        </NavLink>
-                    </li>
-                    <a 
-                        href={`mailto:${data.socialLinks.email}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="md:block bg-white outline-none px-3 py-2 font-medium rounded-md"
-                    >
-                        Get in touch
-                    </a>
+                    {data.pages.map((link, index) => (
+                        <li key={index} className="text-gray-500 text-lg py-4 hover:text-slate-300 transition-all duration-200 ease-in">
+                            <NavLink
+                                to={link.path}
+                                className="py-2 px-3 rounded-md w-full md:w-auto uppercase md:normal-case"
+                            >
+                            {link.name}
+                            </NavLink>
+                        </li>
+                    ))}
                 </ul>
+                <a 
+                    href={`mailto:${data.socialLinks.email}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className ="bg-white outline-none px-3 py-2 font-medium rounded-md hidden md:block"
+                >
+                    Get in touch
+                </a>
+                {isMenuOpen && <Drawer onClose={closeMenu} onOpen={openMenu}/>}
                 <div className= "absolute right-8 block md:hidden">
-                    {isMenuOpen ? (
+                    <FaBars 
+                        color="white" 
+                        size="1.75rem" 
+                        className="cursor-pointer"
+                        onClick={openMenu}
+                    />
+                    {/* {isMenuOpen ? (
                         <FaXmark 
                             color="white"
                             size="1.75rem"
@@ -80,7 +69,7 @@ export default function Navbar(){
                             className="cursor-pointer"
                             onClick={openMenu}
                         />
-                    )}
+                    )} */}
                 </div>
             </nav>
         </header>
