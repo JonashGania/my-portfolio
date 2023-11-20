@@ -1,6 +1,20 @@
 const data = {
     name: "Jonash Gaña",
     profileUrl: "/profile.png",
+    pages: [
+        {
+            name: 'About',
+            path: '/about'
+        },
+        {
+            name: 'Projects',
+            path: '/projects'
+        },
+        {
+            name: 'Experience',
+            path: '/experience'
+        }
+    ],
     projects: [
         {
             title: 'TaskFlow',
