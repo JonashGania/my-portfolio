@@ -15,6 +15,18 @@ const data = {
             path: '/experience'
         }
     ],
+    technologies: [
+        '/html.svg',
+        '/css.svg',
+        '/javascript.svg',
+        '/react.svg',
+        '/nodejs.svg',
+        '/tailwindcss.svg',
+        '/postgresql.svg',
+        '/python.svg',
+        '/git.svg',
+        '/figma.svg',
+    ],
     projects: [
         {
             title: 'TaskFlow',
