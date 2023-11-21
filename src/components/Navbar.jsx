@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom"
-import { FaBars, FaXmark } from "react-icons/fa6"
+import { FaBars } from "react-icons/fa6"
 import { useState } from "react"
 import data from "../constants/data.js"
 import Drawer from "./Drawer.jsx"
@@ -16,14 +16,13 @@ export default function Navbar(){
     }
 
     return(
-        <header className="w-full bg-midnight border-b-[1px] border-slate-600 flex justify-center sticky top-0 z-20">
-            <nav className="w-960 mx-4 flex items-center justify-between gap-4 min-h-[80px]">
+        <header className="w-full bg-midnight flex justify-center z-20">
+            <nav className="w-960 mx-4 flex items-center justify-between gap-4 min-h-[80px] py-4">
                 <Link 
                     to="/" 
-                    className="text-white text-xl px-2 py-1 border-2 border-white rounded-md"
                     onClick={closeMenu}
                 >
-                Nash.
+                    <img src="/logo.svg" alt="logo" />
                 </Link>
                 <ul 
                     className='md:flex items-center hidden gap-8'
@@ -55,21 +54,6 @@ export default function Navbar(){
                         className="cursor-pointer"
                         onClick={openMenu}
                     />
-                    {/* {isMenuOpen ? (
-                        <FaXmark 
-                            color="white"
-                            size="1.75rem"
-                            className="cursor-pointer"
-                            onClick={openMenu}
-                        />
-                    ) : (
-                        <FaBars 
-                            color="white" 
-                            size="1.75rem" 
-                            className="cursor-pointer"
-                            onClick={openMenu}
-                        />
-                    )} */}
                 </div>
             </nav>
         </header>
