@@ -6,19 +6,18 @@ import { FaXmark } from "react-icons/fa6"
 export default function Drawer({onClose, onOpen}) {
   return (
     <div className='w-full h-screen bg-[rgba(0,0,0,0.5)] fixed top-0 left-0 visible md:invisible opacity-100 md:opacity-0 z-30'>
-        <div className={`h-screen bg-midnight flex flex-col gap-4 transition-width duration-300 ease-in ${onOpen ?  'w-[60%]' : 'w-0'}`}>
-            <div className='pt-10 px-4'>
+        <div className={`h-screen bg-midnight flex flex-col gap-8 transition-width duration-300 ease-in ${onOpen ?  'w-[60%]' : 'w-0'}`}>
+            <div className='pt-4 px-4'>
                 <Link 
                     to="/" 
-                    className="text-white text-xl px-2 py-1 border-2 border-white rounded-md"
                     onClick={onClose}
                 >
-                Nash.
+                    <img src="/logo.svg" alt="logo" />
                 </Link>
             </div>
             <ul className='flex flex-col gap-4'>
                 {data.pages.map((link, index) => (
-                    <li key={index} className='text-gray-500 text-xl w-full hover:text-slate-300 transition-all duration-200 ease-in'>
+                    <li key={index} className='text-gray-500 text-xl w-full hover:text-slate-300 hover:bg-[rgba(60,60,60,0.6)] transition-all duration-200 ease-in'>
                         <NavLink
                             to={link.path}
                             className="py-2 px-4 w-full flex"
