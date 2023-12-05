@@ -29,24 +29,12 @@ const data = {
     ],
     projects: [
         {
-            title: 'TaskFlow',
-            description: 'TaskFlow is a todo-list app which is designed to help users organize tasks, activities, and responsibilities',
-            tools: ['HTML', 'CSS', 'JavaScript'],
+            title: 'PomoTask',
+            description: 'PomoTask is a dynamic task management web application, which revolutionizes the way you approach productivity. Integrated with Pomodoro timers, bringing a time-tested technique to boost your focus.',
+            tools: ['React', 'TailwindCSS', 'Firebase'],
             link: '',
-            imgUrl: '/taskflow.png'
-        }, {
-            title: 'Weather-app',
-            description: 'Weather-app uses weather APIs to deliver you accurate weather conditions, temperature, humidity, and wind speed for a specific locations.',
-            tools: ['HTML', 'CSS', 'JavaScript'],
-            link: '',
-            imgUrl: '/weather-app.png'
-        }, {
-            title: 'Tic-Tac-Toe',
-            description: 'Tic-Tac-Toe is an interactive and classic two-player board game.',
-            tools: ['HTML', 'CSS', 'JavaScript'],
-            link: '',
-            imgUrl: '/ticTacToe.png'
-        }
+            imgUrl: '/pomoTask.png'
+        },
     ],
     certificates: [
         {
