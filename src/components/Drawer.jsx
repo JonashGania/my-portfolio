@@ -5,8 +5,8 @@ import { FaXmark } from "react-icons/fa6"
 
 export default function Drawer({onClose, onOpen}) {
   return (
-    <div className='w-full h-screen bg-[rgba(0,0,0,0.5)] fixed top-0 left-0 visible md:invisible opacity-100 md:opacity-0 z-30'>
-        <div className={`h-screen bg-midnight flex flex-col gap-8 transition-width duration-300 ease-in ${onOpen ?  'w-[60%]' : 'w-0'}`}>
+    <div className={`w-full h-screen fixed top-0 left-0  z-30 ${onOpen ? 'visible opacity-100 bg-[rgba(0,0,0,0.5)]' : 'invisible opacity-0'}`}>
+        <div className={`h-screen bg-midnight flex flex-col gap-8 transition-all duration-100 ease-in w-[60%] ${onOpen ?  ' translate-x-0' : ' -translate-x-16'}`}>
             <div className='pt-4 px-4'>
                 <Link 
                     to="/" 
@@ -38,7 +38,7 @@ export default function Drawer({onClose, onOpen}) {
                     </a>
                 </div>
             </ul>
-            <div className='fixed top-4 left-[65%] px-1 py-1 border border-gray-500 rounded-md hover:bg-[rgba(255,255,255,0.1)]'>
+            <div className='fixed top-4 left-[105%] px-1 py-1 border border-gray-500 rounded-md hover:bg-[rgba(255,255,255,0.1)]'>
                 <FaXmark 
                     color="white" 
                     size="1.75rem" 
