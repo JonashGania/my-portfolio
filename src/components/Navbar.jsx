@@ -8,7 +8,7 @@ export default function Navbar(){
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const openMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen(true);
     }
 
     const closeMenu = () => {
@@ -46,7 +46,7 @@ export default function Navbar(){
                 >
                     Get in touch
                 </a>
-                {isMenuOpen && <Drawer onClose={closeMenu} onOpen={openMenu}/>}
+                <Drawer onClose={closeMenu} onOpen={isMenuOpen}/>
                 <div className= "absolute right-8 block md:hidden">
                     <FaBars 
                         color="white" 
