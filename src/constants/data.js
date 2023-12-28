@@ -35,6 +35,13 @@ const data = {
             link: '',
             imgUrl: '/pomoTask.png'
         },
+        {
+            title: 'Game Haven',
+            description: `Immerse yourself in a vast collection of meticulously curated games, offering a diverse tapestry of genres to suit every player's taste. Craft your personalized wishlist, and navigate through search and filter features.`,
+            tools: ['React', 'TailwindCSS', 'Rawg API'],
+            link: '',
+            imgUrl: '/gameHaven.png'
+        },
     ],
     certificates: [
         {
