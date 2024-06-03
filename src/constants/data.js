@@ -70,7 +70,7 @@ const data = {
             description: 'Studied Bachelor of Science in Computer Engineering at Holy Angel University.'
         },
         {
-            date: 'January 2024 - March 2024',
+            date: 'Jan 2024 - Mar 2024',
             job: 'Internship',
             role: 'Software Engineer Intern',
             company: 'Hooli Software, Inc.',
@@ -80,7 +80,7 @@ const data = {
     ],
     socialLinks: {
         github: 'https://github.com/JonashGania',
-        linkedIn: '',
+        linkedIn: 'https://www.linkedin.com/in/jonash-gaña-74b1a12a7/',
         instagram: '',
         facebook: 'https://www.facebook.com/nashhh.30/',
         email: 'jonashtiglao@gmail.com'
