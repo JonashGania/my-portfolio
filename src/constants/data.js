@@ -64,11 +64,19 @@ const data = {
     experience: [
         {
             date: '2020 - 2024',
-            job: '(Graduating)',
+            job: '(Graduated)',
             role: 'Computer Engineering',
             company: 'Holy Angel University',
             description: 'Studied Bachelor of Science in Computer Engineering at Holy Angel University.'
         },
+        {
+            date: 'January 2024 - March 2024',
+            job: 'Internship',
+            role: 'Software Engineer Intern',
+            company: 'Hooli Software, Inc.',
+            description: 'Fixed front-end bugs and improvements, gave solution ideas, collaborate in scrum meetings and gave reports to the team.'
+
+        }
     ],
     socialLinks: {
         github: 'https://github.com/JonashGania',
