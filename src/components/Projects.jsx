@@ -25,7 +25,7 @@ export default function Projects() {
                   <div className="pb-2 flex items-center">
                     <a
                       href={proj.link}
-                      className="text-gray-500 font-medium flex items-center gap-2 hover:underline decoration-solid cursor-not-allowed"
+                      className="text-gray-500 font-medium flex items-center gap-2 hover:underline decoration-solid pointer-events-none"
                     >
                       Link
                       <span>
