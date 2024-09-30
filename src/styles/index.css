@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
-    background-color: rgba(60, 60, 60, 0.6);
-    color: white;
+.active {
+  background-color: rgba(60, 60, 60, 0.6);
+  color: white;
 }
 
 body::-webkit-scrollbar {
-    width: 8px;
-  }
-  
+  width: 8px;
+}
+
 body::-webkit-scrollbar-thumb {
-    background-color: #64748b; 
-    border-radius: 6px; 
-  }
-  
+  background-color: #64748b;
+  border-radius: 6px;
+}
+
 body::-webkit-scrollbar-track {
-    background: transparent; 
-  }
+  background: transparent;
+}
