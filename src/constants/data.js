@@ -1,6 +1,6 @@
 const data = {
   name: "Jonash Gaña",
-  profileUrl: "/avatar.jpg",
+  profileUrl: "/images/avatar.jpg",
   pages: [
     {
       name: "About",
@@ -16,32 +16,39 @@ const data = {
     },
   ],
   technologies: [
-    "/html.svg",
-    "/css.svg",
-    "/javascript.svg",
-    "/react.svg",
-    "/nodejs.svg",
-    "/tailwindcss.svg",
-    "/postgresql.svg",
-    "/python.svg",
-    "/git.svg",
-    "/figma.svg",
+    "/icons/html.svg",
+    "/icons/css.svg",
+    "/icons/javascript.svg",
+    "/icons/react.svg",
+    "/icons/nodejs.svg",
+    "/icons/tailwindcss.svg",
+    "/icons/postgresql.svg",
+    "/icons/python.svg",
+    "/icons/git.svg",
+    "/icons/figma.svg",
   ],
   projects: [
+    {
+      title: "Mortgage Payment Calculator",
+      description: `This mortgage payment calculator is a Front-end practice challenge. Users are able to calculate and see their monthly repayment and total repayment.`,
+      tools: ["HTML", "CSS", "JavaScript", "Webpack"],
+      link: "",
+      imgUrl: "/images/mortgageCalculator.png",
+    },
     {
       title: "PomoTask",
       description:
         "PomoTask is a dynamic task management web application, which revolutionizes the way you approach productivity. Integrated with Pomodoro timers, bringing a time-tested technique to boost your focus.",
       tools: ["React", "TailwindCSS", "Firebase"],
       link: "",
-      imgUrl: "/pomoTask.png",
+      imgUrl: "/images/pomoTask.png",
     },
     {
       title: "Game Haven",
       description: `Immerse yourself in a vast collection of meticulously curated games, offering a diverse tapestry of genres to suit every player's taste. Craft your personalized wishlist, and navigate through search and filter features.`,
       tools: ["React", "TailwindCSS", "Rawg API"],
       link: "",
-      imgUrl: "/gameHaven.png",
+      imgUrl: "/images/gameHaven.png",
     },
   ],
   certificates: [
