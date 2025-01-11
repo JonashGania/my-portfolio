@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'midnight': '#040615',
+        'midnight': '#121212',
         'gradientBlue': '#7FB6D5'
       },
       width: {

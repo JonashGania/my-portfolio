@@ -18,24 +18,21 @@ export default function About() {
         <h1 className="text-white pt-32 pb-10 font-bold text-[40px]">
           About Me
         </h1>
-        <p className="text-gray-400 text-lg pb-8">
-          Hi, I&apos;m Jonash Gaña, an aspiring Software Developer fueled with
-          curiosity who loves to bring ideas to life through code. During the
-          Covid-19 pandemic, I got interested in building web applications and
-          made the decision to learn web development. I started watching Youtube
-          tutorials, followed web development roadmaps, read online free
-          courses, and started building small projects. I would spend 8 hours a
-          day coding, learning, and honing my skills.
+        <p className="text-gray-300 text-lg pb-8">
+          Hello there! I&apos;m Jonash Gaña a Computer Engineering graduate from Pampanga, Philippines.
+          My curiosity for computers started in childhood, and during the Covid-19 pandemic, I developed
+          a keen interest in software development, which inspired me to pursue my tech career. I immersed
+          myself in learning through Youtube tutorials, online courses, and documentations, and while 
+          building various projects.
         </p>
-        <p className="text-gray-400 text-lg">
-          These days, my main focus is to grow my knowledge and improve my
-          skills in building web and mobile applications. I also love learning
-          new things. When I&apos;m not at my desk I am probably lifting weights
-          or playing games during free time.
+        <p className="text-gray-300 text-lg">
+          Besides from coding, I enjoy learning how to cook and experimenting with new dishes that I find good.  
+          When I&apos;m not at my desk, you can find me lifting weights at the gym, biking around the city,
+          or playing video games during my free time. 
         </p>
         <div className="pt-28 text-center">
           <span className="px-10 py-4 text-xl font-bold rounded-lg bg-white text-black">
-            Technology Stacks
+            Tools & Tech Stacks
           </span>
           <div className="grid grid-cols-auto-fill w-full pt-20 gap-5 justify-center justify-items-center">
             {data.technologies.map((tech, index) => (

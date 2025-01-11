@@ -25,7 +25,7 @@ export default function Navbar() {
           {data.pages.map((link, index) => (
             <li
               key={index}
-              className="text-gray-500 text-lg py-4 hover:text-slate-300 transition-all duration-200 ease-in"
+              className="text-gray-400 text-lg py-4 hover:text-slate-300 transition-all duration-200 ease-in"
             >
               <NavLink
                 to={link.path}

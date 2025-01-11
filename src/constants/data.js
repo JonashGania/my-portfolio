@@ -19,13 +19,15 @@ const data = {
     "/icons/html.svg",
     "/icons/css.svg",
     "/icons/javascript.svg",
+    "/icons/typescript.svg",
     "/icons/react.svg",
-    "/icons/nodejs.svg",
+    "/icons/express.svg",
     "/icons/tailwindcss.svg",
     "/icons/postgresql.svg",
     "/icons/python.svg",
     "/icons/git.svg",
-    "/icons/figma.svg",
+    "/icons/postman.svg",
+    "/icons/vercel.svg"
   ],
   projects: [
     {
@@ -34,14 +36,16 @@ const data = {
       tools: ["HTML", "CSS", "JavaScript", "Webpack"],
       link: "",
       imgUrl: "/images/mortgageCalculator.png",
+      deployed: false,
     },
     {
-      title: "PomoTask",
+      title: "Wrappify",
       description:
-        "PomoTask is a dynamic task management web application, which revolutionizes the way you approach productivity. Integrated with Pomodoro timers, bringing a time-tested technique to boost your focus.",
-      tools: ["React", "TailwindCSS", "Firebase"],
-      link: "",
-      imgUrl: "/images/pomoTask.png",
+        "A Spotify Wrapped inspired where spotify users can check their top tracks, artists, genres, playlists anytime.",
+      tools: ["TailwindCSS", "React", "TypeScript", "Spotify Web API"],
+      link: "https://wrappedhits.vercel.app",
+      imgUrl: "/images/wrappify.jpg",
+      deployed: true,
     },
     {
       title: "Game Haven",
@@ -49,6 +53,7 @@ const data = {
       tools: ["React", "TailwindCSS", "Rawg API"],
       link: "",
       imgUrl: "/images/gameHaven.png",
+      deployed: false,
     },
   ],
   certificates: [

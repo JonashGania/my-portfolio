@@ -1,21 +1,12 @@
-import React from 'react'
 import data from '../constants/data'
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { FaXmark } from "react-icons/fa6"
 
 export default function Drawer({onClose, onOpen}) {
   return (
     <div className={`w-full h-screen fixed top-0 left-0  z-30 ${onOpen ? 'visible opacity-100 bg-[rgba(0,0,0,0.5)]' : 'invisible opacity-0'}`}>
         <div className={`h-screen bg-midnight flex flex-col gap-8 transition-all duration-100 ease-in w-[60%] ${onOpen ?  ' translate-x-0' : ' -translate-x-16'}`}>
-            <div className='pt-4 px-4'>
-                <Link 
-                    to="/" 
-                    onClick={onClose}
-                >
-                    <img src="/logo.svg" alt="logo" />
-                </Link>
-            </div>
-            <ul className='flex flex-col gap-4'>
+            <ul className='flex flex-col gap-4 pt-4'>
                 {data.pages.map((link, index) => (
                     <li key={index} className='text-gray-500 text-xl w-full hover:text-slate-300 hover:bg-[rgba(60,60,60,0.6)] transition-all duration-200 ease-in'>
                         <NavLink

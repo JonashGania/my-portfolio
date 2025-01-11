@@ -27,7 +27,7 @@ export default function Home() {
             {data.projects.slice(-2).map((proj, index) => (
               <div
                 key={index}
-                className="max-w-[700px] overflow-hidden rounded-lg border border-slate-500 relative"
+                className="max-w-[700px] overflow-hidden rounded-lg border border-zinc-700 relative"
               >
                 <h2 className="text-white bg-black absolute top-2 left-2 z-10 px-3 sm:px-5 py-2 rounded-sm text-base sm:text-xl font-bold">
                   {proj.title}

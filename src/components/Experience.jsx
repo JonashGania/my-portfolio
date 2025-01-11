@@ -1,6 +1,5 @@
 import data from "../constants/data.js"
 
-
 export default function Experience(){
     return (
         <section className="w-full min-h-screen bg-midnight pt-8 sm:pt-12 transition-all duration-300 ease-in">
@@ -13,7 +12,7 @@ export default function Experience(){
                                 key={index}
                                 className="max-w-[400px] mx-8 pb-4"
                             >
-                                <div className=" absolute bg-white h-5 w-5 rounded-[50%] -left-2 z-10"></div>
+                                <div className="absolute bg-white h-5 w-5 rounded-full -left-2 z-10 circle pulse"></div>
                                 <div className="flex items-center gap-3">
                                     <h3 className="text-white text-lg">
                                         {exp.date}
@@ -23,8 +22,8 @@ export default function Experience(){
                                 
                                 <div className="bg-white px-4 mt-4 py-4 rounded-lg">
                                     <h2 className="text-black text-lg font-semibold">{exp.role}</h2>
-                                    <span className="text-gray-400">{exp.company}</span>
-                                    <p className="text-gray-500 font-medium pt-4">
+                                    <span className="text-zinc-600 font-medium">{exp.company}</span>
+                                    <p className="text-zinc-500 font-medium pt-4">
                                         {exp.description}
                                     </p>
                                 </div>
