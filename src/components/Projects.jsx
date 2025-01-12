@@ -21,7 +21,7 @@ export default function Projects() {
                       />
                     </div>
                   </div>
-                  <div className="col-span-1 md:col-span-5 flex flex-col pl-5 md:pl-10">
+                  <div className="col-span-1 md:col-span-5 flex flex-col pl-3 md:pl-10">
                     <span className="text-2xl md:text-3xl text-white font-bold pb-2">
                       {proj.title}
                     </span>
@@ -48,7 +48,7 @@ export default function Projects() {
                     <p className="text-gray-400 text-lg font-regular pb-6">
                       {proj.description}
                     </p>
-                    <div className="flex items-center gap-4 pt">
+                    <div className="flex items-center flex-wrap gap-4 pt">
                       {proj.tools.map((tech, index) => (
                         <span
                           key={index}

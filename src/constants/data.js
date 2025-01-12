@@ -31,12 +31,12 @@ const data = {
   ],
   projects: [
     {
-      title: "Mortgage Payment Calculator",
-      description: `This mortgage payment calculator is a Front-end practice challenge. Users are able to calculate and see their monthly repayment and total repayment.`,
-      tools: ["HTML", "CSS", "JavaScript", "Webpack"],
-      link: "",
-      imgUrl: "/images/mortgageCalculator.png",
-      deployed: false,
+      title: "Resume Builder",
+      description: `Quickly craft a professional resume with this fast and user-friendly resume builder. In less than 5 minutes, build a personalized resume that highlights your skills and experience.`,
+      tools: ["TypeScript", "React", "TailwindCSS"],
+      link: "https://jonashgania.github.io/resume-builder/",
+      imgUrl: "/images/resume-builder.jpg",
+      deployed: true,
     },
     {
       title: "Wrappify",
@@ -51,9 +51,9 @@ const data = {
       title: "Game Haven",
       description: `Immerse yourself in a vast collection of meticulously curated games, offering a diverse tapestry of genres to suit every player's taste. Craft your personalized wishlist, and navigate through search and filter features.`,
       tools: ["React", "TailwindCSS", "Rawg API"],
-      link: "",
+      link: "https://jonashgania.github.io/game-haven/",
       imgUrl: "/images/gameHaven.png",
-      deployed: false,
+      deployed: true,
     },
   ],
   certificates: [
