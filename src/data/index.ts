@@ -31,6 +31,14 @@ const data = {
     ],
     projects: [
       {
+        title: "Game Haven",
+        description: `Immerse yourself in a vast collection of meticulously curated games, offering a diverse tapestry of genres to suit every player's taste. Craft your personalized wishlist, and navigate through search and filter features.`,
+        tools: ["React", "TailwindCSS", "Rawg API"],
+        link: "https://jonashgania.github.io/game-haven/",
+        imgUrl: "/images/gameHaven.png",
+        deployed: true,
+      },
+      {
         title: "Resume Builder",
         description: `Quickly craft a professional resume with this fast and user-friendly resume builder. In less than 5 minutes, build a personalized resume that highlights your skills and experience.`,
         tools: ["TypeScript", "React", "TailwindCSS"],
@@ -48,11 +56,11 @@ const data = {
         deployed: true,
       },
       {
-        title: "Game Haven",
-        description: `Immerse yourself in a vast collection of meticulously curated games, offering a diverse tapestry of genres to suit every player's taste. Craft your personalized wishlist, and navigate through search and filter features.`,
-        tools: ["React", "TailwindCSS", "Rawg API"],
-        link: "https://jonashgania.github.io/game-haven/",
-        imgUrl: "/images/gameHaven.png",
+        title: "Movie Collection Management",
+        description: `Collections of movies where users can add, delete, update their movies. Browse movies by genres and add your favorite movies on your watchlist.`,
+        tools: ["React", "Express", "PostgreSQL", "Prisma", "TailwindCSS"],
+        link: "https://github.com/JonashGania/movie-collection-management",
+        imgUrl: "/images/movie-collection.jpg",
         deployed: true,
       },
     ],
