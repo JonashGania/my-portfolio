@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import ThemeProvider from "../components/ThemeProvider";
 import "./globals.css";
 
 const inter = Inter({
-  subsets: ['latin']
-})
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Jonash Gaña",
@@ -19,13 +18,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={inter.className} suppressHydrationWarning>
       <body
-        className={`antialiased`}
+        className={`antialiased bg-white dark:bg-zinc-950`}
+        suppressHydrationWarning
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

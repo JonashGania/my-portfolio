@@ -3,9 +3,9 @@
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import Link from 'next/link'
+import Link from "next/link";
 import Image from "next/image";
-import data from "../data";
+import data from "../constants";
 import Drawer from "./Drawer";
 
 export default function Navbar() {
@@ -22,18 +22,13 @@ export default function Navbar() {
 
   const isActive = (link: string) => {
     return pathname.startsWith(link);
-  }
+  };
 
   return (
     <header className="w-full bg-midnight flex justify-center z-20">
       <nav className="w-960 mx-4 flex items-center justify-between gap-4 min-h-[80px] py-4">
         <Link href={"/"} onClick={closeMenu}>
-          <Image 
-            src={"/icons/logo.svg"} 
-            alt="logo"
-            width={50}
-            height={50}
-          />
+          <Image src={"/icons/logo.svg"} alt="logo" width={50} height={50} />
         </Link>
         <ul className="md:flex items-center hidden gap-8">
           {data.pages.map((link, index) => (
@@ -43,7 +38,9 @@ export default function Navbar() {
             >
               <Link
                 href={link.path}
-                className={`py-2 px-3 rounded-md w-full md:w-auto uppercase md:normal-case text-base ${isActive(link.path) ? 'active' : ''}`}
+                className={`py-2 px-3 rounded-md w-full md:w-auto uppercase md:normal-case text-base ${
+                  isActive(link.path) ? "active" : ""
+                }`}
               >
                 {link.name}
               </Link>
