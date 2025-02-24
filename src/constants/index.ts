@@ -126,21 +126,21 @@ const data = {
   ],
   certificates: [
     {
+      name: "React",
+      company: "TestDome",
+      link: "https://www.testdome.com/certificates/69c98bb4fc464682afac22fbabe10fac",
+      id: 0,
+    },
+    {
       name: "IT Essentials",
       company: "Cisco",
       link: "/certificates/ITE CPHWFUND 2nd-certificate.pdf",
-      id: 0,
+      id: 1,
     },
     {
       name: "Introduction to Networks",
       company: "Cisco",
       link: "/certificates/CCNAv7 ITN INCOM-certificate.pdf",
-      id: 1,
-    },
-    {
-      name: "Enterprise Networking, Security, and Automation",
-      company: "Cisco",
-      link: "/certificates/CCNAv7 ENSA INCO-certificate.pdf",
       id: 2,
     },
     {
