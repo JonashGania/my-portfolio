@@ -132,27 +132,27 @@ const data = {
       id: 0,
     },
     {
-      name: "IT Essentials",
-      company: "Cisco",
-      link: "/certificates/ITE CPHWFUND 2nd-certificate.pdf",
+      name: "JavaScript",
+      company: "TestDome",
+      link: "https://www.testdome.com/certificates/9f091e1ed4a1479f83fcd869e6e71cbd",
       id: 1,
     },
     {
-      name: "Introduction to Networks",
-      company: "Cisco",
-      link: "/certificates/CCNAv7 ITN INCOM-certificate.pdf",
+      name: "TypeScript",
+      company: "TestDome",
+      link: "https://www.testdome.com/certificates/f2d803151fd049909e6f1a1781918d65",
       id: 2,
+    },
+    {
+      name: "Software Engineering",
+      company: "TestDome",
+      link: "https://www.testdome.com/certificates/bd81b7ec933041028f194ab3e29d91a4",
+      id: 3,
     },
     {
       name: "Introduction to Data Science",
       company: "Cisco",
       link: "/certificates/Introduction_to_Data_Science.pdf",
-      id: 3,
-    },
-    {
-      name: "Introduction to IoT",
-      company: "Cisco",
-      link: "/certificates/Introduction_to_IoT.pdf",
       id: 4,
     },
     {
@@ -168,7 +168,7 @@ const data = {
       role: "Software Engineer Intern",
       company: "Hooli Software, Inc.",
       description:
-        "Fixed front-end bugs and improvements, gave solution ideas, collaborate in scrum meetings and gave reports to the team.",
+        "Fixed bugs and improved existing components. Worked closely with other interns, collaborated in scrum meetings and gave reports to the team.",
     },
     {
       date: "2020 - 2024 (Graduated)",
