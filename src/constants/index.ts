@@ -99,6 +99,15 @@ const data = {
       deployed: true,
     },
     {
+      title: "SaaS Landing Page",
+      description:
+        "A professional-grade SaaS landing page fully animated and responsive built using modern Frontend tools.",
+      tools: ["TailwindCSS", "React", "TypeScript", "Framer Motion"],
+      link: "https://jonashgania.github.io/saas-ai-landing-page/",
+      imgUrl: "/images/saas-ai.png",
+      deployed: true,
+    },
+    {
       title: "Wrappify",
       description:
         "A Spotify Wrapped inspired where spotify users can check their top tracks, artists, genres, playlists anytime.",
