@@ -88,7 +88,7 @@ body::-webkit-scrollbar-track {
 .tech-stack-grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 4;
+  row-gap: 1rem;
   padding-top: 1rem;
   justify-items: center;
 }
