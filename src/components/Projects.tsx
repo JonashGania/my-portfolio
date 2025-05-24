@@ -6,7 +6,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation } from "swiper/modules";
 import { useState } from "react";
-import { ChevronsRight } from "lucide-react";
+import { ChevronsRight, Link as LinkIcon } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -43,8 +44,7 @@ const Projects = () => {
           .reverse()
           .map((proj, index) => (
             <SwiperSlide key={index} className="max-w-[280px] md:max-w-[350px]">
-              <Link
-                href={proj.link}
+              <div
                 className={`flex flex-col w-full transition-opacity duration-300 ${
                   hoveredIndex === null || hoveredIndex === index
                     ? "opacity-100 "
@@ -61,24 +61,34 @@ const Projects = () => {
                   className="w-[280px] h-[170px] md:w-[350px] md:h-[190px]"
                 />
                 <div className="flex flex-col pt-2">
-                  <h2 className="text-sm font-semibold text-zinc-700 dark:text-white">
-                    {proj.title}
-                  </h2>
+                  <div className="flex items-center gap-2">
+                    <h2 className="text-sm font-semibold text-zinc-700 dark:text-white">
+                      {proj.title}
+                    </h2>
+                    <Link href={proj.link}>
+                      <LinkIcon
+                        size={16}
+                        className="dark:text-gray-300 text-neutral-700"
+                      />
+                    </Link>
+                  </div>
+
                   <p className="text-xs text-zinc-700 dark:text-zinc-300 pt-1">
                     {proj.description}
                   </p>
                   <div className="flex items-center flex-wrap gap-2 pt-2">
                     {proj.tools.map((tech, index) => (
-                      <span
+                      <Badge
+                        variant={"outline"}
                         key={index}
-                        className="text-zinc-700 dark:text-zinc-300 text-xs font-medium bg-gray-200 dark:bg-zinc-800 px-3 py-1 rounded-lg"
+                        className="text-xs rounded-full font-normal dark:bg-white/5 bg-gray-100"
                       >
                         {tech}
-                      </span>
+                      </Badge>
                     ))}
                   </div>
                 </div>
-              </Link>
+              </div>
             </SwiperSlide>
           ))}
       </Swiper>
