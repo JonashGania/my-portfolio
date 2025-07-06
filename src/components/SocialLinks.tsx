@@ -35,7 +35,7 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <div className="flex-1 px-4 py-2 border border-gray-200 dark:bg-[#111] dark:border-[#333] rounded-sm text-center">
+    <div className="flex-1 px-4 py-2 border border-gray-200 dark:bg-neutral-900/70 dark:border-[#333] rounded-lg text-center">
       <h2 className="text-lg font-semibold">Social Links</h2>
       <div className="flex justify-center gap-4 pt-4 flex-wrap">
         {socials.map((item, index) => (
