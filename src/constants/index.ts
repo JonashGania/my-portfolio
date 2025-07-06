@@ -53,16 +53,24 @@ const data = {
       path: "/icons/postgresql.svg",
     },
     {
+      name: "Firebase",
+      path: "/icons/firebase.svg",
+    },
+    {
+      name: "Supabase",
+      path: "/icons/supabase.svg",
+    },
+    {
+      name: "Prisma",
+      path: "/icons/prisma.svg",
+    },
+    {
       name: "Postman",
       path: "/icons/postman.svg",
     },
     {
       name: "Git",
       path: "/icons/git.svg",
-    },
-    {
-      name: "Prisma",
-      path: "/icons/prisma.svg",
     },
     {
       name: "Vercel",
@@ -172,6 +180,13 @@ const data = {
     },
   ],
   experience: [
+    {
+      date: "May 2025 - Present",
+      role: "Fullstack Developer Intern",
+      company: "Codebility",
+      description:
+        "Joined a community of devs as an intern to develop real-world projects, upscale, and connect with other devs.",
+    },
     {
       date: "Jan 2024 - Mar 2024",
       role: "Software Engineer Intern",
