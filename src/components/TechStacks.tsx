@@ -9,7 +9,7 @@ import {
 
 const TechStacks = () => {
   return (
-    <div className="flex-1 px-4 py-2 border border-gray-200 dark:bg-[#111] dark:border-[#333] rounded-sm">
+    <div className="flex-1 px-4 py-2 border border-gray-200 dark:bg-neutral-900/70 dark:border-[#333] rounded-lg">
       <h2 className="text-lg font-semibold">Tech Stacks</h2>
       <div className="tech-stack-grid">
         <TooltipProvider delayDuration={100}>
