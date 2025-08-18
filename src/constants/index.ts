@@ -91,14 +91,6 @@ const data = {
       deployed: true,
     },
     {
-      title: "Movie Collection Management",
-      description: `Movie collection management website that has CRUD functionality.`,
-      tools: ["React.js", "Express.js", "PostgreSQL", "Prisma", "TailwindCSS"],
-      link: "https://github.com/JonashGania/movie-collection-management",
-      imgUrl: "/images/movie-collection.png",
-      deployed: true,
-    },
-    {
       title: "SaaS Landing Page",
       description:
         "A professional-grade SaaS landing page fully animated and responsive built using modern Frontend tools.",
@@ -114,6 +106,14 @@ const data = {
       tools: ["TailwindCSS", "React.js", "TypeScript", "Spotify Web API"],
       link: "https://wrappedhits.vercel.app",
       imgUrl: "/images/wrappify.png",
+      deployed: true,
+    },
+    {
+      title: "Focusd",
+      description: `A Pomodoro timer app that helps you stay focused and productive, with customizable timers and calming soundscapes.`,
+      tools: ["Next.js", "Supabase", "TypeScript", "TailwindCSS"],
+      link: "https://focusd.vercel.app",
+      imgUrl: "/images/focusd.png",
       deployed: true,
     },
     {
@@ -133,11 +133,11 @@ const data = {
       deployed: true,
     },
     {
-      title: "Focusd",
-      description: `A Pomodoro timer app that helps you stay focused and productive, with customizable timers and calming soundscapes.`,
-      tools: ["Next.js", "Supabase", "TypeScript", "TailwindCSS"],
-      link: "https://focusd.vercel.app",
-      imgUrl: "/images/focusd.png",
+      title: "TapUp",
+      description: `TapUp streamlines networking by offering both digital and printable business cards. Customizable and connects card to a personalized website.`,
+      tools: ["Next.js", "Firebase", "Xendit", "TailwindCSS", "Shadcn"],
+      link: "https://www.tapup.tech",
+      imgUrl: "/images/tapup.png",
       deployed: true,
     },
   ],
@@ -185,7 +185,7 @@ const data = {
       role: "Fullstack Developer Intern",
       company: "Codebility",
       description:
-        "Joined a community of devs as an intern to develop real-world projects, upscale, and connect with other devs.",
+        "Joined a community of devs as an intern to build SaaS grade web products, upskill, and connect with other devs.",
     },
     {
       date: "Jan 2024 - Mar 2024",
@@ -206,7 +206,7 @@ const data = {
     github: "https://github.com/JonashGania",
     linkedIn: "https://www.linkedin.com/in/jonash-gaña-74b1a12a7/",
     instagram: "",
-    facebook: "https://www.facebook.com/nashhh.30/",
+    facebook: "https://www.facebook.com/jonashgania",
     email: "jonashtiglao@gmail.com",
   },
 };
