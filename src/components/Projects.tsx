@@ -53,13 +53,16 @@ const Projects = () => {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <Image
-                  src={proj.imgUrl}
-                  alt="Project image"
-                  height={190}
-                  width={350}
-                  className="w-[280px] h-[170px] md:w-[350px] md:h-[190px]"
-                />
+                <div className="aspect-video">
+                  <Image
+                    src={proj.imgUrl}
+                    alt="Project image"
+                    height={190}
+                    width={350}
+                    className="w-[280px] h-[170px] md:w-[350px] md:h-[190px]"
+                  />
+                </div>
+
                 <div className="flex flex-col pt-2">
                   <div className="flex items-center gap-2">
                     <h2 className="text-sm font-semibold text-zinc-700 dark:text-white">
