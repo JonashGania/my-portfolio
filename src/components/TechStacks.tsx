@@ -15,7 +15,7 @@ const TechStacks = () => {
         <TooltipProvider delayDuration={100}>
           {data.technologies.map((tech, index) => (
             <Tooltip key={index}>
-              <TooltipTrigger>
+              <TooltipTrigger className="cursor-default">
                 <Image src={tech.path} alt="icon" height={40} width={40} />
               </TooltipTrigger>
               <TooltipContent>
