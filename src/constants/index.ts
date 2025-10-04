@@ -87,7 +87,7 @@ const data = {
       description: `Quickly build a personalized resume that highlights your skills and experience in less than 5 minutes.`,
       tools: ["TypeScript", "React.js", "TailwindCSS"],
       link: "https://jonashgania.github.io/resume-builder/",
-      imgUrl: "/images/resume-builder.png",
+      imageUrl: "/images/resume-builder.png",
       deployed: true,
     },
     {
@@ -96,7 +96,7 @@ const data = {
         "A professional-grade SaaS landing page fully animated and responsive built using modern Frontend tools.",
       tools: ["TailwindCSS", "React.js", "TypeScript", "Framer Motion"],
       link: "https://jonashgania.github.io/saas-ai-landing-page/",
-      imgUrl: "/images/saas-ai-landing.png",
+      imageUrl: "/images/saas-ai-landing.png",
       deployed: true,
     },
     {
@@ -105,7 +105,7 @@ const data = {
         "A Spotify Wrapped inspired where spotify users can check their top tracks, artists, genres, playlists anytime.",
       tools: ["TailwindCSS", "React.js", "TypeScript", "Spotify Web API"],
       link: "https://wrappedhits.vercel.app",
-      imgUrl: "/images/wrappify.png",
+      imageUrl: "/images/wrappify.png",
       deployed: true,
     },
     {
@@ -113,7 +113,7 @@ const data = {
       description: `A Pomodoro timer app that helps you stay focused and productive, with customizable timers and calming soundscapes.`,
       tools: ["Next.js", "Supabase", "TypeScript", "TailwindCSS"],
       link: "https://focusd.vercel.app",
-      imgUrl: "/images/focusd.png",
+      imageUrl: "/images/focusd.png",
       deployed: true,
     },
     {
@@ -129,7 +129,7 @@ const data = {
         "Prisma",
       ],
       link: "https://stashio.vercel.app",
-      imgUrl: "/images/stashio.png",
+      imageUrl: "/images/stashio.png",
       deployed: true,
     },
     {
@@ -137,7 +137,7 @@ const data = {
       description: `TapUp streamlines networking by offering both digital and printable business cards. Customizable and connects card to a personalized website.`,
       tools: ["Next.js", "Firebase", "Xendit", "TailwindCSS", "Shadcn"],
       link: "https://www.tapup.tech",
-      imgUrl: "/images/tapup.png",
+      imageUrl: "/images/tapup.png",
       deployed: true,
     },
   ],
