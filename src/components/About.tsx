@@ -5,8 +5,8 @@ const About = () => {
     <div className="flex-1 ">
       <h2 className="text-lg font-semibold">About</h2>
       <p className="text-sm text-zinc-700 dark:text-zinc-300">
-        Hello there! I&apos;m Jonash Gaña a Computer Engineering graduate from
-        Pampanga, Philippines.
+        Hello there! I&apos;m Jonash Gaña a Full Stack Developer and Computer
+        Engineering graduate from Pampanga, Philippines.
       </p>
       <p className="text-zinc-700 dark:text-zinc-300 text-sm pt-4">
         My curiosity for computers started in childhood, and during the Covid-19
