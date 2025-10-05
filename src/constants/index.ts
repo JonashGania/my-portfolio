@@ -143,37 +143,37 @@ const data = {
   ],
   certificates: [
     {
-      name: "React",
+      title: "React",
       company: "TestDome",
       link: "https://www.testdome.com/certificates/69c98bb4fc464682afac22fbabe10fac",
       id: 0,
     },
     {
-      name: "JavaScript",
+      title: "JavaScript",
       company: "TestDome",
       link: "https://www.testdome.com/certificates/9f091e1ed4a1479f83fcd869e6e71cbd",
       id: 1,
     },
     {
-      name: "TypeScript",
+      title: "TypeScript",
       company: "TestDome",
       link: "https://www.testdome.com/certificates/f2d803151fd049909e6f1a1781918d65",
       id: 2,
     },
     {
-      name: "Software Engineering",
+      title: "Software Engineering",
       company: "TestDome",
       link: "https://www.testdome.com/certificates/bd81b7ec933041028f194ab3e29d91a4",
       id: 3,
     },
     {
-      name: "SQL",
+      title: "SQL",
       company: "TestDome",
       link: "https://www.testdome.com/certificates/5932a94c680641429d53149c2b806d09",
       id: 4,
     },
     {
-      name: "Introduction to Data Science",
+      title: "Introduction to Data Science",
       company: "Cisco",
       link: "/certificates/Introduction_to_Data_Science.pdf",
       id: 5,
