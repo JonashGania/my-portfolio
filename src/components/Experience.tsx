@@ -1,14 +1,18 @@
-import data from "../constants";
+import { getExperiences } from "../sanity/lib/queries";
 
-const Experience = () => {
+export const revalidate = 60;
+
+const Experience = async () => {
+  const experiences = await getExperiences();
+
   return (
     <div className="w-full sm:w-[280px] md:w-[340px] ">
       <h2 className="text-lg font-semibold">Experience</h2>
       <div className="w-full flex justify-center">
         <div className="w-full flex flex-col">
-          {data.experience.map((exp, index) => (
+          {experiences.map((exp) => (
             <li
-              key={index}
+              key={exp._id}
               className="pl-8 pb-4 last:pb-0 list-none relative after:content-[''] after:absolute after:w-[3px] after:h-full after:bg-zinc-200 dark:after:bg-zinc-800 after:left-1 after:top-1"
             >
               <div className="absolute -left-[2.5px] top-1 z-10">
