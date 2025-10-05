@@ -1,5 +1,5 @@
 import { client } from "./client";
-import { Project } from "@/src/types";
+import { Project, Experience, Certificate } from "@/src/types";
 import data from "@/src/constants";
 
 export const getProjects = async (): Promise<Project[]> => {
@@ -23,4 +23,47 @@ export const getProjects = async (): Promise<Project[]> => {
   }
 
   return projects;
+};
+
+export const getExperiences = async (): Promise<Experience[]> => {
+  const experience = await client.fetch<Experience[]>(
+    `*[_type == "experience"] | order(_createdAt desc) { 
+            _id,
+            company, 
+            role,
+            date,
+            description,
+        }`,
+    {},
+    {
+      next: { revalidate: 60 },
+    }
+  );
+
+  if (experience.length === 0) {
+    return data.experience;
+  }
+
+  return experience;
+};
+
+export const getCertificates = async (): Promise<Certificate[]> => {
+  const certificate = await client.fetch<Certificate[]>(
+    `*[_type == "certificate"] | order(_createdAt asc) { 
+            _id,
+            title, 
+            company,
+            link,
+        }`,
+    {},
+    {
+      next: { revalidate: 60 },
+    }
+  );
+
+  if (certificate.length === 0) {
+    return data.certificates;
+  }
+
+  return certificate;
 };
