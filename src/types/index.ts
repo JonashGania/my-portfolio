@@ -6,3 +6,18 @@ export interface Project {
   link: string;
   imageUrl: string;
 }
+
+export interface Experience {
+  _id?: string;
+  company: string;
+  role: string;
+  date: string;
+  description: string;
+}
+
+export interface Certificate {
+  _id?: string;
+  company: string;
+  title: string;
+  link: string;
+}
