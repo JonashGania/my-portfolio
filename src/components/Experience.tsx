@@ -13,24 +13,24 @@ const Experience = async () => {
           {experiences.map((exp) => (
             <li
               key={exp._id}
-              className="pl-8 pb-4 last:pb-0 list-none relative after:content-[''] after:absolute after:w-[3px] after:h-full after:bg-zinc-200 dark:after:bg-zinc-800 after:left-1 after:top-1"
+              className="pl-8 pb-4 last:pb-0 list-none relative after:content-[''] after:absolute after:w-[3px] after:h-full after:bg-zinc-200 dark:after:bg-zinc-800 duration-100 transition-[background-color] ease-in-out after:left-1 after:top-1"
             >
               <div className="absolute -left-[2.5px] top-1 z-10">
                 <span className="relative flex size-4">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-black dark:bg-white opacity-75"></span>
-                  <span className="relative inline-flex size-4 rounded-full bg-black dark:bg-white"></span>
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-black  dark:bg-white opacity-75"></span>
+                  <span className="relative inline-flex size-4 rounded-full bg-black  dark:bg-white"></span>
                 </span>
               </div>
-              <span className="text-zinc-700 dark:text-zinc-300 text-sm">
+              <span className="text-zinc-700dark:text-zinc-300  duration-100 transition-color ease-in-out text-sm">
                 {exp.date}
               </span>
-              <h2 className="text-zinc-700 dark:text-gray-200 text-sm font-medium">
+              <h2 className="text-zinc-700dark:text-gray-200  duration-100 transition-color ease-in-out text-sm font-medium">
                 {exp.role}
               </h2>
-              <h3 className="text-zinc-700 dark:text-zinc-300 text-xs">
+              <h3 className="text-zinc-700dark:text-zinc-300  duration-100 transition-color ease-in-out text-xs">
                 {exp.company}
               </h3>
-              <p className="text-zinc-700 dark:text-zinc-300 text-xs pt-4">
+              <p className="text-zinc-700dark:text-zinc-300  duration-100 transition-color ease-in-out text-xs pt-4">
                 {exp.description}
               </p>
             </li>

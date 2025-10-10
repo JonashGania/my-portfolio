@@ -35,17 +35,17 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <div className="flex-1 px-4 py-2 border border-gray-200 dark:bg-neutral-900/70 dark:border-[#333] rounded-lg text-center">
+    <div className="flex-1 px-4 py-2 border border-gray-200 dark:bg-neutral-900/70 dark:border-[#333] duration-100 transition-all ease-in-out rounded-lg text-center">
       <h2 className="text-lg font-semibold">Social Links</h2>
       <div className="flex justify-center gap-4 pt-4 flex-wrap">
         {socials.map((item, index) => (
           <a
             href={item.href}
             key={index}
-            className="flex items-center gap-2 bg-black dark:bg-white py-2 px-5 rounded-md"
+            className="flex items-center gap-2 bg-black dark:bg-white duration-100 transition-[background-colors] ease-in-out py-2 px-5 rounded-md"
           >
             {item.icon}
-            <span className="text-white dark:text-black text-sm">
+            <span className="text-white dark:text-black duration-100 transition-colors ease-in-out text-sm">
               {item.name}
             </span>
           </a>

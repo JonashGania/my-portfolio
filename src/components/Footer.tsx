@@ -1,4 +1,5 @@
 import data from "../constants";
+import { getCopyrightYear } from "../lib/utils";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="h-[100px] w-full border-t border-t-gray-200 dark:border-t-zinc-700">
         <div className="pt-6 flex justify-between flex-col md:flex-row gap-4 md:gap-12">
           <p className="text-zinc-700 dark:text-zinc-300 text-sm ">
-            &copy; 2025 {data.name}. All rights reserved.
+            &copy; {getCopyrightYear()} {data.name}. All rights reserved.
           </p>
           <p className="text-zinc-700 dark:text-zinc-300 text-sm">
             Built with <strong>Next.js</strong> and{" "}

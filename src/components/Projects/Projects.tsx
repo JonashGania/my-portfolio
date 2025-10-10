@@ -12,12 +12,12 @@ const Projects = async () => {
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold">Projects</h2>
         <div className="flex sm:hidden items-center gap-1">
-          <span className="text-zinc-700 dark:text-gray-200 text-xs">
+          <span className="text-zinc-700 dark:text-gray-200 duration-100 transition-[background-color] ease-in-out text-xs">
             Drag slide
           </span>
           <ChevronsRight
             size={18}
-            className="text-zinc-700 dark:text-gray-200 animate-bounce-right"
+            className="text-zinc-700 dark:text-gray-200 duration-100 transition-colors ease-in-out animate-bounce-right"
           />
         </div>
       </div>
