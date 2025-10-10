@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
       <body
-        className={`antialiased bg-white dark:bg-zinc-950`}
+        className={`antialiased bg-white dark:bg-zinc-950 duration-100 transition-[background-color] ease-in-out`}
         suppressHydrationWarning
       >
         <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
