@@ -1,4 +1,4 @@
-import { getCertificates } from "../sanity/lib/queries";
+import { getCertificates } from "../lib/queries";
 
 const Certificates = async () => {
   const certificates = await getCertificates();
