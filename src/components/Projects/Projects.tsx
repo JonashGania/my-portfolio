@@ -1,5 +1,5 @@
 import { ChevronsRight } from "lucide-react";
-import { getProjects } from "../../sanity/lib/queries";
+import { getProjects } from "../../lib/queries";
 import ProjectSwiper from "./ProjectSwiper";
 
 export const revalidate = 60;
