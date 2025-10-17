@@ -35,7 +35,7 @@ const Header = () => {
             href={`mailto:${data.socialLinks.email}`}
             target="_blank"
             rel="noreferrer"
-            className="bg-black dark:bg-white w-[150px] dark:text-black text-white text-sm outline-none py-2 mt-6 rounded-md flex items-center gap-2 justify-center duration-100 transition-all ease-in-out"
+            className="bg-black dark:bg-white dark:hover:bg-white/90 w-[150px] dark:text-black text-white text-sm outline-none py-2 mt-6 rounded-md flex items-center gap-2 justify-center duration-100 transition-all ease-in-out"
           >
             <Mail
               size={18}
