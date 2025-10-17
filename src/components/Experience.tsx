@@ -1,4 +1,4 @@
-import { getExperiences } from "../sanity/lib/queries";
+import { getExperiences } from "../lib/queries";
 
 export const revalidate = 60;
 
