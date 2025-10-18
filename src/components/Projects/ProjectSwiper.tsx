@@ -5,7 +5,6 @@ import { Link as LinkIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Project } from "@/src/types";
 import { AnimationPlaybackControls, motion, useAnimate } from "motion/react";
-
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,10 +15,11 @@ const ProjectSwiper = ({ projects }: { projects: Project[] }) => {
   const animation = useRef<AnimationPlaybackControls | null>(null);
 
   useEffect(() => {
+    // Move entire row continuously to the left
     animation.current = animate(
       scope.current,
       { x: "-50%" },
-      { duration: 30, ease: "linear", repeat: Infinity }
+      { duration: 60, ease: "linear", repeat: Infinity }
     );
   }, [animate, scope]);
 
@@ -33,23 +33,29 @@ const ProjectSwiper = ({ projects }: { projects: Project[] }) => {
     }
   }, [isHovered]);
 
+  // Duplicate project list for seamless looping
+  const duplicatedProjects = [...projects, ...projects];
+
   return (
     <div className="overflow-x-clip flex">
       <motion.div
         ref={scope}
-        className="flex flex-none gap-16 "
+        className="flex flex-none gap-16"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {projects
+        {duplicatedProjects
           .slice()
           .reverse()
           .map((proj, index) => (
-            <div key={proj._id} className="max-w-[280px] md:max-w-[350px]">
+            <div
+              key={proj._id + index}
+              className="max-w-[280px] md:max-w-[350px]"
+            >
               <div
                 className={`flex flex-col w-full transition-opacity duration-300 ${
                   hoveredIndex === null || hoveredIndex === index
-                    ? "opacity-100 "
+                    ? "opacity-100"
                     : "opacity-60 dark:opacity-50"
                 }`}
                 onMouseEnter={() => setHoveredIndex(index)}
@@ -67,26 +73,26 @@ const ProjectSwiper = ({ projects }: { projects: Project[] }) => {
 
                 <div className="flex flex-col pt-2">
                   <div className="flex items-center gap-2">
-                    <h2 className="text-sm font-semibold text-zinc-700 dark:text-white duration-100 transition-colors ease-in-out">
+                    <h2 className="text-sm font-semibold text-zinc-700 dark:text-white">
                       {proj.title}
                     </h2>
                     <Link href={proj.link}>
                       <LinkIcon
                         size={16}
-                        className="dark:text-gray-300 text-neutral-700 duration-100 transition-colors ease-in-out"
+                        className="dark:text-gray-300 text-neutral-700"
                       />
                     </Link>
                   </div>
 
-                  <p className="text-xs text-zinc-700 dark:text-zinc-300 duration-100 transition-colors ease-in-out pt-1">
+                  <p className="text-xs text-zinc-700 dark:text-zinc-300 pt-1">
                     {proj.description}
                   </p>
                   <div className="flex items-center flex-wrap gap-2 pt-2">
                     {proj.tools.map((tech, index) => (
                       <Badge
-                        variant={"outline"}
+                        variant="outline"
                         key={index}
-                        className="text-xs rounded-full font-normal dark:bg-white/5 bg-gray-100 duration-100 transition-[background-colors] ease-in-out"
+                        className="text-xs rounded-full font-normal dark:bg-white/5 bg-gray-100"
                       >
                         {tech}
                       </Badge>
