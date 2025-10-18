@@ -1,5 +1,5 @@
 import { client } from "./client";
-import { Project, Experience, Certificate } from "@/src/types";
+import { Project, Experience, Certificate, Profile } from "@/src/types";
 import data from "@/src/constants";
 
 export const getProjects = async (): Promise<Project[]> => {
@@ -66,4 +66,21 @@ export const getCertificates = async (): Promise<Certificate[]> => {
   }
 
   return certificate;
+};
+
+export const getProfile = async (): Promise<Profile> => {
+  const profile = await client.fetch<Profile>(
+    `*[_type == "profile"][0] {
+      name,
+      location,
+      position,
+      "resumeUrl": resume.asset->url
+    }`,
+    {},
+    {
+      next: { revalidate: 60 },
+    }
+  );
+
+  return profile ?? data.profile;
 };
