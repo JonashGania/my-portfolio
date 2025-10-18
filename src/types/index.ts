@@ -1,5 +1,13 @@
-export interface Project {
+export interface Profile {
   _id?: string;
+  name: string;
+  location: string;
+  position: string;
+  resumeUrl: string;
+}
+
+export interface Project {
+  _id: string;
   title: string;
   description: string;
   tools: string[];
