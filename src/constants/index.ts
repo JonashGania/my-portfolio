@@ -1,6 +1,13 @@
+import { v4 as uuidv4 } from "uuid";
+
 const data = {
-  name: "Jonash Gaña",
   profileUrl: "/images/avatar.jpg",
+  profile: {
+    name: "Jonash Gaña",
+    location: "Pampanga, Philippines",
+    position: "Full Stack Developer",
+    resume: "/certificates/Jonash_Gaña_Resume.pdf",
+  },
   pages: [
     {
       name: "About",
@@ -83,6 +90,7 @@ const data = {
   ],
   projects: [
     {
+      _id: uuidv4(),
       title: "Resume Builder",
       description: `Quickly build a personalized resume that highlights your skills and experience in less than 5 minutes.`,
       tools: ["TypeScript", "React.js", "TailwindCSS"],
@@ -91,6 +99,7 @@ const data = {
       deployed: true,
     },
     {
+      _id: uuidv4(),
       title: "SaaS Landing Page",
       description:
         "A professional-grade SaaS landing page fully animated and responsive built using modern Frontend tools.",
@@ -100,6 +109,7 @@ const data = {
       deployed: true,
     },
     {
+      _id: uuidv4(),
       title: "Wrappify",
       description:
         "A Spotify Wrapped inspired where spotify users can check their top tracks, artists, genres, playlists anytime.",
@@ -109,6 +119,7 @@ const data = {
       deployed: true,
     },
     {
+      _id: uuidv4(),
       title: "Focusd",
       description: `A Pomodoro timer app that helps you stay focused and productive, with customizable timers and calming soundscapes.`,
       tools: ["Next.js", "Supabase", "TypeScript", "TailwindCSS"],
@@ -117,6 +128,7 @@ const data = {
       deployed: true,
     },
     {
+      _id: uuidv4(),
       title: "Stashio",
       description:
         "File storage website where you can easily upload, manage and access your files.",
@@ -133,6 +145,7 @@ const data = {
       deployed: true,
     },
     {
+      _id: uuidv4(),
       title: "TapUp",
       description: `TapUp streamlines networking by offering both digital and printable business cards. Customizable and connects card to a personalized website.`,
       tools: ["Next.js", "Firebase", "Xendit", "TailwindCSS", "Shadcn"],
