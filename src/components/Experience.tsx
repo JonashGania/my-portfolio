@@ -21,16 +21,16 @@ const Experience = async () => {
                   <span className="relative inline-flex size-4 rounded-full bg-black  dark:bg-white"></span>
                 </span>
               </div>
-              <span className="text-zinc-700dark:text-zinc-300  duration-100 transition-color ease-in-out text-sm">
+              <span className="duration-100 transition-color ease-in-out text-sm">
                 {exp.date}
               </span>
-              <h2 className="text-zinc-700dark:text-gray-200  duration-100 transition-color ease-in-out text-sm font-medium">
+              <h2 className="duration-100 transition-color ease-in-out text-sm font-medium">
                 {exp.role}
               </h2>
-              <h3 className="text-zinc-700dark:text-zinc-300  duration-100 transition-color ease-in-out text-xs">
+              <h3 className="duration-100 transition-color ease-in-out text-xs">
                 {exp.company}
               </h3>
-              <p className="text-zinc-700dark:text-zinc-300  duration-100 transition-color ease-in-out text-xs pt-4">
+              <p className="duration-100 transition-color ease-in-out text-xs pt-4">
                 {exp.description}
               </p>
             </li>

@@ -9,7 +9,7 @@ const Projects = async () => {
 
   return (
     <section className="w-full pt-12">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between duration-100 transition-colors ease-in-out">
         <h2 className="text-lg font-semibold">Projects</h2>
         <div className="flex sm:hidden items-center gap-1">
           <span className="text-zinc-700 dark:text-gray-200 duration-100 transition-[background-color] ease-in-out text-xs">

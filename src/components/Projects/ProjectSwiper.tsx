@@ -73,9 +73,7 @@ const ProjectSwiper = ({ projects }: { projects: Project[] }) => {
 
                 <div className="flex flex-col pt-2">
                   <div className="flex items-center gap-2">
-                    <h2 className="text-sm font-semibold text-zinc-700 dark:text-white">
-                      {proj.title}
-                    </h2>
+                    <h2 className="text-sm font-semibold ">{proj.title}</h2>
                     <Link href={proj.link}>
                       <LinkIcon
                         size={16}
@@ -84,9 +82,7 @@ const ProjectSwiper = ({ projects }: { projects: Project[] }) => {
                     </Link>
                   </div>
 
-                  <p className="text-xs text-zinc-700 dark:text-zinc-300 pt-1">
-                    {proj.description}
-                  </p>
+                  <p className="text-xs pt-1">{proj.description}</p>
                   <div className="flex items-center flex-wrap gap-2 pt-2">
                     {proj.tools.map((tech, index) => (
                       <Badge
