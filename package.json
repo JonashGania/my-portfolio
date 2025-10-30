@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "studio:dev": "cd studio && npx sanity dev"
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.1.6",
